@@ -1,0 +1,30 @@
+
+<%if false%>
+<header id="header" class="row" data-hook>
+  <figure id="logo" class="columns six" data-hook><%= logo %></figure>
+  <%= render :partial => 'spree/shared/nav_bar' %>
+  <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
+</header>
+<%end%>
+
+
+
+<div id="header">
+  <div id="headerwrap">
+    <a href="/"><div id="logo">
+    </div></a>
+    <div id="header_right">
+         <ul id="nav_ul">
+           <li class="nav_li"><a class="nav_li" href="/contact">CONTACT</a></li>
+           <li class="nav_li"><a class="nav_li" href="/support">SUPPORT</a></li>
+           <li class="nav_li"><a class="nav_li" href="/purchase">PURCHASE</a></li>
+           <li class="nav_li"><a class="nav_li" href="/about">ABOUT</a></li>
+           <li class="nav_li"><a class="nav_li" href="/">HOME</a></li>
+         </ul>
+    </div>
+  </div>
+</div>
+<div class="row" data-hook>
+  <%= render :partial => 'spree/shared/nav_bar' %>
+  <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
+ </div>
